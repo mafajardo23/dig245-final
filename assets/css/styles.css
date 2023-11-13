@@ -1,2 +1,59 @@
+@font-face {
+    font-family: "HelloValentina";
+    src: url(HelloValentina.woff) format("woff"),
+    url(HelloValentina.ttf)  format("truetype");
+}
 
-/* css */
+@font-face {
+    font-family: "ChristmasLove";
+    src: url(Christmas\ Love\ Forever.woff) format("woff"),
+    url(Christmas\ Love\ Forever.ttf)  format("truetype");
+}
+
+body {
+    background-color: #9CC4B2;
+}
+
+.container-fluid{
+    text-align: center;
+    position: sticky;
+    height: 60px;
+    border-color: white;
+  
+  }
+
+  .header {
+    font-family: "HelloValentina";
+    color: white;
+    font-size: 40px;
+  }
+
+  .Space {
+    height: 53px;
+  }
+  
+  .December {
+    font-family: "ChristmasLove";
+    color: white;
+    font-size: 48px;
+    margin-left: 78px;
+  }
+
+  .calendar-day {
+    border: 1px solid #ddd;
+    height: 190px; 
+    width: 180px;  
+    text-align: right;
+    background-color: #f2f2f2;
+}
+
+.blank-day {
+    
+    height: 170px; 
+    width: 180px;
+}
+
+.blank-firstrow {
+    margin-left: 200px;
+}
+
