@@ -10,6 +10,18 @@
     url(Christmas\ Love\ Forever.ttf)  format("truetype");
 }
 
+@font-face {
+    font-family: 'ChristmasBell';
+    src: url('Christmas\ Bell\ -\ Personal\ Use.otf') format('opentype');
+    /* Other font properties */
+}
+
+@font-face {
+    font-family: "KiteOne";
+    src: url(KiteOne-Regular.woff) format("woff"),
+    url(KiteOne-Regular.ttf)  format("truetype");
+}
+
 body {
     background-color: #9CC4B2;
 }
@@ -41,19 +53,56 @@ body {
 
   .calendar-day {
     border: 1px solid #ddd;
-    height: 190px; 
-    width: 180px;  
+    height: 150px; 
+    width: 188px;  
     text-align: right;
     background-color: #f2f2f2;
+    border-radius: 15px;
+}
+
+.calendar-day-num {
+    font-family: "ChristmasBell";
+    font-size: 23px;
+    color: maroon;
+
 }
 
 .blank-day {
     
     height: 170px; 
-    width: 180px;
+    width: 160px;
 }
 
 .blank-firstrow {
     margin-left: 200px;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #AE2C1E;
+    border: 1px solid #cbcbcb;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .popup-message {
+    position: relative;
+  }
+
+  .message-text {
+    color: white;
+    font-family: "KiteOne";
+  }
+  
+  .close {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
