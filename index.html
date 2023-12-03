@@ -51,6 +51,7 @@
             ❆
           </div>
         </div>
+        
     <div id="popup" class="popup">
         <div class="popup-message">
             <div class="close" onclick="closePopup()">&times;</div>
@@ -65,63 +66,190 @@
         <div class="header">Merry & Mindful</div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-7"><div class="December">December</div></div>
-            <div class="col-md-1"></div>
-        </div>
+    <div class="container-fluid">
+            <div class="December">December</div>
+            <div class="Space"></div>
     </div>
 
     <div class="container">
         <div class="row">
             <!-- Week 1 -->
+            <div class="Space"></div>
             <div class="col calendar-cell blank-firstrow"></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">1</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">2</div></div>
+
+            <!-- FIrst edited calendar -->
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">1</div>
+            </div>
+          </div>
+
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">2</div>
+            </div>
+          </div>
         </div>
         <div class="row">
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">3</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">4</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">5</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">6</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">7</div></div>
-            <!-- Week 2 -->
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">8</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">9</div></div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">3</div>
+            </div>
+          </div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">4</div>
+            </div>
+          </div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">5</div>
+            </div>
+          </div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">6</div>
+            </div>
+          </div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">7</div>
+            </div>
+          </div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">8</div>
+            </div>
+          </div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">9</div>
+            </div>
+          </div>
         </div>
         <div class="row">
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">10</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">11</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">12</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">13</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">14</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">15</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">16</div></div>
+
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">10</div>
+            </div>
+          </div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">11</div>
+            </div>
+          </div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">12</div>
+            </div>
+          </div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">13</div>
+            </div>
+          </div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">14</div>
+            </div>
+          </div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">15</div>
+            </div>
+          </div>
+          <div class="col-2 calendar-day" onclick="showMessage(this)">
+            <div class="calendar-day-content">
+                <div class="calendar-day-num">16</div>
+            </div>
+          </div>
         </div>
         <div class="row">
             <!-- Week 3 -->
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">17</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">18</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">19</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">20</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">21</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">22</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">23</div></div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">17</div>
+              </div>
+            </div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">18</div>
+              </div>
+            </div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">19</div>
+              </div>
+            </div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">20</div>
+              </div>
+            </div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">21</div>
+              </div>
+            </div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">22</div>
+              </div>
+            </div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">23</div>
+              </div>
+            </div>
+
         </div>
         <div class="row">
             <!-- Week 4 -->
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">24</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">25</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">26</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">27</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">28</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">29</div></div>
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">30</div></div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">24</div>
+              </div>
+            </div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">25</div>
+              </div>
+            </div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">26</div>
+              </div>
+            </div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">27</div>
+              </div>
+            </div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">28</div>
+              </div>
+            </div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">29</div>
+              </div>
+            </div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">30</div>
+              </div>
+            </div>
+
         </div>
         <div class="row">
             <!-- Week 5 -->
-            <div class="col-2 calendar-day"><div class = "calendar-day-num">31</div></div>
+            <div class="col-2 calendar-day" onclick="showMessage(this)">
+              <div class="calendar-day-content">
+                  <div class="calendar-day-num">31</div>
+              </div>
+            </div>
             <div class="col calendar-cell blank-day"></div>
             <div class="col calendar-cell blank-day"></div>
             <div class="col calendar-cell blank-day"></div>

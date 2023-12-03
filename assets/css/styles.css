@@ -33,7 +33,7 @@
         
 
 body {
-    background-color: #9CC4B2;
+    background-color: #8DA08A
 }
 
 .container-fluid{
@@ -47,7 +47,7 @@ body {
   .header {
     font-family: "HelloValentina";
     color: white;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .Space {
@@ -57,22 +57,34 @@ body {
   .December {
     font-family: "ChristmasLove";
     color: white;
-    font-size: 48px;
-    margin-left: 78px;
-  }
-
+    font-size: 70px;
+    }
+  
   .calendar-day {
     border: 1px solid #ddd;
     height: 150px; 
     width: 188px;  
     text-align: right;
-    background-color: #f2f2f2;
+    background-color: white;
     border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, border-width 0.3s ease;
+}
+
+.calendar-day-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.calendar-day:hover {
+  border-width: 4px; 
 }
 
 .calendar-day-num {
     font-family: "ChristmasBell";
-    font-size: 25px;
+    font-size: 70px;
     color: maroon;
 
 }
