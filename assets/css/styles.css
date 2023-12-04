@@ -64,6 +64,10 @@ body {
   .Space {
     height: 53px;
   }
+
+  .week-space {
+    height: 30px;
+  }
   
   .December {
     font-family: "ChristmasLove";
@@ -73,11 +77,13 @@ body {
   
   .calendar-day {
     border: 1px solid #ddd;
-    height: 150px; 
-    width: 188px;  
+    height: 115px; 
+    width: 168px;  
     text-align: right;
     background-color: white;
     border-radius: 10px;
+    margin-right: 10px; 
+    margin-left: 10px;
     cursor: pointer;
     transition: border-color 0.3s ease, border-width 0.3s ease;
 }
@@ -101,7 +107,7 @@ body {
 }
 
 .blank-day { 
-    height: 170px; 
+    height: 150px; 
     width: 140px;
 }
 
