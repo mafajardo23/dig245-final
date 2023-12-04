@@ -45,7 +45,6 @@ const dayMessages = {
     '29': 'December 29th: Create a list of new year’s resolutions.',
     '30': 'December 30th: Reflect on the true meaning of Christmas.',
     '31': 'December 31st: Celebrate the New Year with your loved ones.',
-
 };
 
 function showMessage(element) {
@@ -109,5 +108,3 @@ window.onload = function() {
 };
 
 
-
-/* javascript */
