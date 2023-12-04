@@ -104,7 +104,10 @@ window.onload = function() {
             }
         });
     }
-    
+
     highlightClickedDays();
 };
+
+
+
 /* javascript */
