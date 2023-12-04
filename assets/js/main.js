@@ -48,28 +48,39 @@ const dayMessages = {
 
 };
 
-function showMessage(element, message) {
+function showMessage(element) {
     const dayNumber = element.querySelector('.calendar-day-num').textContent;
+    const currentDate = new Date();
+    const currentDay = currentDate.getDate();
 
-    document.querySelector('.popup-message .message-text').textContent = dayMessages[dayNumber];
-    document.querySelector('.popup').style.display = 'block';
+    if (dayNumber <= currentDay) {
+        document.querySelector('.popup-message .message-text').textContent = dayMessages[dayNumber];
+        document.querySelector('.popup').style.display = 'block';
 
-    localStorage.setItem('clickedDay', dayNumber);
+        localStorage.setItem('clickedDay', dayNumber);
 
-    document.querySelector('.close').onclick = function() {
         element.style.borderColor = '#800000';
         element.style.borderWidth = '6px';
-        document.querySelector('.popup').style.display = 'none';
-    };
+
+        document.querySelector('.close').onclick = function() {
+            document.querySelector('.popup').style.display = 'none';
+        };
+    } else {
+        alert('Sorry! You can only open days up to the current date.');
+    }
 }
 
 window.onload = function() {
     const clickedDay = localStorage.getItem('clickedDay');
     if (clickedDay) {
-        const dayElement = document.querySelector(`.calendar-day-num:contains('${clickedDay}')`).parentNode.parentNode;
-        dayElement.style.borderColor = '#800000';
-        element.style.borderWidth = '6px';
+        const dayElements = document.querySelectorAll('.calendar-day-num');
+        dayElements.forEach(function(dayElement) {
+            if (dayElement.textContent === clickedDay) {
+                const parentDayElement = dayElement.parentNode.parentNode;
+                parentDayElement.style.borderColor = '#800000';
+                parentDayElement.style.borderWidth = '6px';
+            }
+        });
     }
 };
-
 /* javascript */
