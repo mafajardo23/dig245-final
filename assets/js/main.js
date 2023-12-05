@@ -12,7 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('popup').style.display = 'none';
     localStorage.setItem('popupClosed', 'true');
     }
-    // Typing out all the messages
+
+    function openStoredMessage() {
+        const storedMessage = localStorage.getItem('popupClosed');
+        
+        if (storedMessage) {
+            document.querySelector('.popup-message .message-text').textContent = storedMessage;
+            document.getElementById('popup').style.display = 'block';
+        }
+    }
+
 const dayMessages = {
     '1': 'December 1st: Make sure your space is decorated for christmas, if not, do it!',
     '2': 'December 2nd: Watch the movie Elf.',
@@ -63,7 +72,7 @@ function showMessage(element) {
             localStorage.setItem('clickedDays', JSON.stringify(clickedDays));
         }
 
-        element.style.borderColor = '#800000';
+        element.style.borderColor = '#AE2C1E';
         element.style.borderWidth = '6px';
 
         highlightClickedDays();
@@ -85,7 +94,7 @@ function highlightClickedDays() {
         const parentDayElement = dayElement.parentNode.parentNode;
 
         if (clickedDays.includes(dayNumber)) {
-            parentDayElement.style.borderColor = '#800000';
+            parentDayElement.style.borderColor = '#AE2C1E';
             parentDayElement.style.borderWidth = '6px';
         }
     });
@@ -98,7 +107,7 @@ window.onload = function() {
         dayElements.forEach(function(dayElement) {
             if (dayElement.textContent === clickedDay) {
                 const parentDayElement = dayElement.parentNode.parentNode;
-                parentDayElement.style.borderColor = '#800000';
+                parentDayElement.style.borderColor = '#AE2C1E';
                 parentDayElement.style.borderWidth = '6px';
             }
         });
@@ -107,4 +116,13 @@ window.onload = function() {
     highlightClickedDays();
 };
 
+let audio = document.getElementById("myAudio");
+
+function togglePlayPause() {
+  if (audio.paused || audio.ended) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
 

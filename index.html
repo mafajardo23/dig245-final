@@ -61,7 +61,7 @@
         &nbsp;
         <div class="message-text"> ❅ The spirit of christmas has been completly changed. The focus has shifted from being with family and sharing special moments to gift-giving and how that measures the amount of love one person has towards the other. Advent calendars were invented as a way to countdown the days until christmas. However, in the 1950s they started putting gifts and chocolates each day so that each individual would look forward to a reward. The advent calendar tells the same story as the holiday of christmas. This is why its so important to shift back and celebrate the true meaning of christmas. We hope this calendar can help you achieve this ❆ </div>
         </div>
-      </div>
+    </div>
 
       <img src="treevector.png" class="tree"  alt="Snowman" width="70" height="100">
 
@@ -278,18 +278,17 @@
 
       <div class="row">
         <div class="col-10">
-            <blockquote class="quote">
+            <div class="quote">
               “The best of all gifts around any Christmas tree : the presence of a happy family all wrapped up in each other.” - Burton Hills
-            </blockquote>
-        </div>
+            </div>
+            <button class="btn about" onclick="openPopup()">About the project</button>
+          </div>
     </div>
  
 
-    <div class="Space"></div>
-    <audio autoplay>
-        <source src="christmas.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
+    <audio id="myAudio" src="christmas.mp3" preload="auto"></audio>
+    <button class="btn music" onclick="togglePlayPause()">Click for a surprise</button>
+
 
     <!-- load javascript after the page elements render -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

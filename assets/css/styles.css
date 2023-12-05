@@ -101,7 +101,7 @@ body {
 .calendar-day-num {
     font-family: "ChristmasBell";
     font-size: 70px;
-    color: maroon;
+    color: #AE2C1E;
 
 }
 
@@ -130,17 +130,24 @@ body {
     transform: translate(-50%, -50%);
     background-color: #AE2C1E;
     border: 1px solid #cbcbcb;
+    width: 300px;
     padding: 20px;
     border-radius: 10px;
+    width: 80%; 
+    max-width: 600px;
   }
   
   .popup-message {
     position: relative;
+    font-size: 30px;
   }
 
   .message-text {
     color: white;
     font-family: "KiteOne";
+    font-weight: bold;
+    font-size: 20px
+  
   }
   
   .close {
@@ -150,6 +157,44 @@ body {
     font-size: 30px;
     cursor: pointer;
     color: white;
+  }
+
+  .about, 
+  .about:hover,
+  .about:active, 
+  .about:visited 
+  .about:active,
+  .about:focus,
+  .about.focus,
+  .about:active:focus,
+  .about:active.focus {
+    background-color: #AE2C1E;
+    color: white;
+    box-shadow: none; 
+    outline: none; 
+    position: fixed;
+    top: 10px; 
+    left: 10px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .music, 
+  .music:hover,
+  .music:active, 
+  .music:visited 
+  .music:active,
+  .music:focus,
+  .music.focus,
+  .music:active:focus,
+  .music:active.focus {
+    background-color:#AE2C1E;
+    color: white;
+    box-shadow: none; 
+    outline: none; 
+    position: fixed;
+    top: 60px; 
+    left: 10px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
   
