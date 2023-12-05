@@ -135,6 +135,7 @@ body {
     border-radius: 10px;
     width: 80%; 
     max-width: 600px;
+    z-index: 9999;
   }
   
   .popup-message {
@@ -146,7 +147,7 @@ body {
     color: white;
     font-family: "KiteOne";
     font-weight: bold;
-    font-size: 30px
+    font-size: 25px
   
   }
   
