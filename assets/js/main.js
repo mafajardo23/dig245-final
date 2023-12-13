@@ -14,13 +14,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function openStoredMessage() {
-        const storedMessage = localStorage.getItem('popupClosed');
-        
-        if (storedMessage) {
-            document.querySelector('.popup-message .message-text').textContent = storedMessage;
+        const originalMessage = `❅ The spirit of christmas has been completly changed. The focus has shifted from being with family and sharing special moments to gift-giving and how that measures the amount of love one person has towards the other. Advent calendars were invented as a way to countdown the days until christmas. However, in the 1950s they started putting gifts and chocolates each day so that each individual would look forward to a reward. The advent calendar tells the same story as the holiday of christmas. This is why its so important to shift back and celebrate the true meaning of christmas. We hope this calendar can help you achieve this ❆ `;
+    
+        document.querySelector('.popup-message .message-text').textContent = originalMessage;
+        document.getElementById('popup').style.display = 'block';
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('popupClosed')) {
+            openPopup();
+        }
+    });
+    
+    function openPopup() {
+        if (!localStorage.getItem('clickedDays')) {
+            openStoredMessage();
+            localStorage.setItem('popupClosed', 'true');
+        } else {
             document.getElementById('popup').style.display = 'block';
         }
     }
+    
+    document.querySelector('.about').addEventListener('click', function() {
+        openStoredMessage();
+    });
 
 const dayMessages = {
     '1': 'December 1st: Make sure your space is decorated for christmas, if not, do it!',
