@@ -1,201 +1,214 @@
 @font-face {
-    font-family: "HelloValentina";
-    src: url(HelloValentina.woff) format("woff"),
-    url(HelloValentina.ttf)  format("truetype");
+  font-family: "HelloValentina";
+  src: url(HelloValentina.woff) format("woff"),
+  url(HelloValentina.ttf)  format("truetype");
 }
 
 @font-face {
-    font-family: "ChristmasLove";
-    src: url(Christmas\ Love\ Forever.woff) format("woff"),
-    url(Christmas\ Love\ Forever.ttf)  format("truetype");
+  font-family: "ChristmasLove";
+  src: url(Christmas\ Love\ Forever.woff) format("woff"),
+  url(Christmas\ Love\ Forever.ttf)  format("truetype");
 }
 
 @font-face {
-    font-family: 'ChristmasBell';
-    src: url('Christmas\ Bell\ -\ Personal\ Use.otf') format('opentype');
-    /* Other font properties */
+  font-family: 'ChristmasBell';
+  src: url('Christmas\ Bell\ -\ Personal\ Use.otf') format('opentype');
+  /* Other font properties */
 }
 
 @font-face {
-    font-family: "KiteOne";
-    src: url(KiteOne-Regular.woff) format("woff"),
-    url(KiteOne-Regular.ttf)  format("truetype");
+  font-family: "KiteOne";
+  src: url(KiteOne-Regular.woff) format("woff"),
+  url(KiteOne-Regular.ttf)  format("truetype");
 }
 
-        
+      
 .snowflake {
-    color: #fff;
-    font-size: 2em;
-    font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 2em;
+  font-family: Arial, sans-serif;
 }
-        
+      
 @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
-        
+      
 .tree {
-  position: fixed;
-  bottom: 10px; 
-  left: 10px; 
+position: fixed;
+bottom: 10px; 
+left: 10px; 
 }
 
 .snowman {
-  position: fixed;
-  bottom: 10px; 
-  right: 10px; 
+position: fixed;
+bottom: 10px; 
+right: 10px; 
 }
 
 body {
-    background-color: #9CC4B2
+  background-color: #9CC4B2
 }
 
 .container-fluid{
-    text-align: center;
-    position: sticky;
-    height: 60px;
-    border-color: white;
-  
+  text-align: center;
+  position: sticky;
+  height: 60px;
+  border-color: white;
+
+}
+
+.header {
+  font-family: "HelloValentina";
+  color: white;
+  font-size: 40px;
+}
+
+.Space {
+  height: 53px;
+}
+
+.week-space {
+  height: 20px;
+}
+
+.December {
+  font-family: "ChristmasLove";
+  color: white;
+  font-size: 70px;
   }
 
-  .header {
-    font-family: "HelloValentina";
-    color: white;
-    font-size: 40px;
-  }
-
-  .Space {
-    height: 53px;
-  }
-
-  .week-space {
-    height: 20px;
-  }
-  
-  .December {
-    font-family: "ChristmasLove";
-    color: white;
-    font-size: 70px;
-    }
-  
-  .calendar-day {
-    border: 1px solid #ddd;
-    height: 115px; 
-    width: 168px;  
-    background-color: white;
-    border-radius: 10px;
-    margin-right: 10px; 
-    margin-left: 10px;
-    cursor: pointer;
-    transition: border-color 0.3s ease, border-width 0.3s ease;
+.calendar-day {
+  border: 1px solid #ddd;
+  height: 115px; 
+  width: 168px;  
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 10px; 
+  margin-left: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, border-width 0.3s ease;
 }
 
 .calendar-day-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; 
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%; 
 }
 
 .calendar-day:hover {
-  border-width: 4px; 
+border-width: 4px; 
 }
 
 .calendar-day-num {
-    font-family: "ChristmasBell";
-    font-size: 70px;
-    color: #AE2C1E;
+  font-family: "ChristmasBell";
+  font-size: 70px;
+  color: #AE2C1E;
 
 }
 
 .blank-day { 
-    height: 115px; 
-    width: 168px;
+  height: 115px; 
+  width: 168px;
 }
 
 .blank-firstrow {
-    margin-left: 200px;
+  margin-left: 200px;
+}
+
+.weekdays {
+  color:  white;
+  margin-left: 200px;
+  margin-right: 5px; 
+  margin-left: 20px;
+  font-family: "ChristmasBell";
+  font-size: 30px;
+}
+
+.col {
+  margin-left: 25px;
+  margin-right: 35px; 
 }
 
 .quote {
-  margin-left: 300px;
-  text-align: center;
-  font-family: "ChristmasBell";
-  font-size: 50px;
-  color: white;
+margin-left: 300px;
+text-align: center;
+font-family: "ChristmasBell";
+font-size: 50px;
+color: white;
 }
 
 .popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #AE2C1E;
-    border: 1px solid #cbcbcb;
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%; 
-    max-width: 600px;
-    z-index: 9999;
-  }
-  
-  .popup-message {
-    position: relative;
-    font-size: 25px;
-  }
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #AE2C1E;
+  border: 1px solid #cbcbcb;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; 
+  max-width: 600px;
+  z-index: 9999;
+}
 
-  .message-text {
-    color: white;
-    font-family: "KiteOne";
-    font-weight: bold;
-    font-size: 25px
-  
-  }
-  
-  .close {
-    position: absolute;
-    top: 2px;
-    right: 10px;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-  }
+.popup-message {
+  position: relative;
+  font-size: 25px;
+}
 
-  .about, 
-  .about:hover,
-  .about:active, 
-  .about:visited 
-  .about:active,
-  .about:focus,
-  .about.focus,
-  .about:active:focus,
-  .about:active.focus {
-    background-color: #AE2C1E;
-    color: white;
-    box-shadow: none; 
-    outline: none; 
-    position: fixed;
-    top: 10px; 
-    left: 15px; 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+.message-text {
+  color: white;
+  font-family: "KiteOne";
+  font-weight: bold;
+  font-size: 25px
 
-  .music, 
-  .music:hover,
-  .music:active, 
-  .music:visited 
-  .music:active,
-  .music:focus,
-  .music.focus,
-  .music:active:focus,
-  .music:active.focus {
-    background-color:#AE2C1E;
-    color: white;
-    box-shadow: none; 
-    outline: none; 
-    position: fixed;
-    top: 60px; 
-    left: 10px; 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+}
 
-  
+.close {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.about, 
+.about:hover,
+.about:active, 
+.about:visited 
+.about:active,
+.about:focus,
+.about.focus,
+.about:active:focus,
+.about:active.focus {
+  background-color: #AE2C1E;
+  color: white;
+  box-shadow: none; 
+  outline: none; 
+  position: fixed;
+  top: 10px; 
+  left: 15px; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.music, 
+.music:hover,
+.music:active, 
+.music:visited 
+.music:active,
+.music:focus,
+.music.focus,
+.music:active:focus,
+.music:active.focus {
+  background-color:#AE2C1E;
+  color: white;
+  box-shadow: none; 
+  outline: none; 
+  position: fixed;
+  top: 60px; 
+  left: 10px; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+

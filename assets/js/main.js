@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function openStoredMessage() {
-        const originalMessage = `❅ The spirit of christmas has been completly changed. The focus has shifted from being with family and sharing special moments to gift-giving and how that measures the amount of love one person has towards the other. Advent calendars were invented as a way to countdown the days until christmas. However, in the 1950s they started putting gifts and chocolates each day so that each individual would look forward to a reward. The advent calendar tells the same story as the holiday of christmas. This is why its so important to shift back and celebrate the true meaning of christmas. We hope this calendar can help you achieve this ❆ `;
+        const originalMessage = `❅ The spirit of christmas has been completly changed. The focus has shifted from being with family and sharing special moments to gift-giving and how that measures the amount of love one person has towards the other. Advent calendars were invented as a way to countdown the days until christmas. However, in the 1950s they started putting gifts and chocolates each day so that each individual would look forward to a reward. The advent calendar tells the same story as the holiday of christmas. This is why its so important to shift back and celebrate the true meaning of christmas. We hope this calendar can help you achieve this. Click on each day to reveal the prompt for each day but keep in mind you will only be able to open the days that have passed or the current day. ❆ `;
     
         document.querySelector('.popup-message .message-text').textContent = originalMessage;
         document.getElementById('popup').style.display = 'block';
